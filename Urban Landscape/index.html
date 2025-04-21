@@ -1,0 +1,88 @@
+<!--  Layout and tutorial from https://www.w3schools.com/howto/howto_website_create_portfolio.asp -->
+<!DOCTYPE html>
+    <head>
+      <title>Gallery with Sidebar</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+
+    <style>
+      h5{
+        font-family: sans-serif;
+        color: hsl(21, 17%, 49%);
+      }
+
+      h6{
+        font-family: sans-serif;
+        color: hsl(21, 17%, 49%);
+        text-align: justify;
+        font-size: 14px;
+        background-color: #f9f9f9;
+        padding: 16px;
+        margin: 10px;
+        border-radius: 0;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); /* optional for depth */
+      }
+
+      #gallery img {
+      margin-bottom: 16px; 
+      }
+    </style>
+    </head>
+    <body>
+      
+      <script src = 'sketch.js'></script>
+
+    <nav class="w3-sidebar w3-bar-block w3-#f5f0dc w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar">
+    <h5 class="w3-padding-64 w3-center">"WAVES OF SENSORY" <br> URBAN LANDSCAPE"</br> </h5>
+
+    <h6>The intent of this landscape design came from the depiction of water movement through evoking wave like patterns. Its motion, rhythm, and life elicit the idea of a multi-sensory experience. 
+ 
+    <p>Interactive elements invite the 5 senses (sight, touch, smell, taste and sound). Different coloured paths with different materials and rocks add a sense of texture to the site, enhancing your sensory experience within the landscape. The varying entrance points to this site allow an organic flow to other areas rather than a linear one.</p>
+     
+    <p>Interaction with water is another sensorial experience in this design. There are many access points to the water including: steps that act as a bridge to different pathways, near the edge of the sidewalk (cooling and insight on the concept of this landscape) or through the c-shaped curvature connected to the water. </p>
+     
+    <p>The elevated gardens include seating and is a multi-purpose area. The surrounding vegetation blooms with vibrant colours with distinct scents during Spring. To those with synesthesia, the flowers’ scent or colour may spark your sensory system and you may be able to experience a taste sensory. </p>
+    
+    <p>The fluid transition between the paths, gardens, and water captures the seamless continuity of water elements. By embracing the fluidity of water, this particular design delineates undulating landscapes and flowy patterns which reflect and invite the people to interact with the rhythms of nature.  </h6></p>
+    
+    </nav>
+
+
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+    <div class="w3-main" style="margin-left:300px">
+    <div class="w3-hide-large" style="margin-top:83px"></div>
+
+  <div class="w3-row-padding" id="gallery">
+    <div class="w3-third">
+      <img src="1.jpg" style="width:100%">
+      <img src="12.jpg" style="width:100%">
+      <img src="4.jpg" style="width:100%">
+      <img src="7.jpg" style="width:100%">
+      <img src="10.jpg" style="width:100%">
+    </div>
+
+    <div class="w3-third">
+      <img src="2.jpg" style="width:100%">
+      <img src="8.jpg" style="width:100%">
+      <img src="11.jpg" style="width:100%">
+      <img src="5.jpg" style="width:100%">
+    </div>
+
+    <div class="w3-third">
+      <img src="3.jpg" style="width:100%">
+      <img src="6.jpg" style="width:100%">
+      <img src="9.jpg" style="width:100%">
+      <img src="13.jpg" style="width:100%">
+    </div>
+
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright"></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

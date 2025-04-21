@@ -1,0 +1,84 @@
+<!-- Layout and tutorial from https://www.w3schools.com/howto/howto_website_create_portfolio.asp -->
+<!DOCTYPE html>
+    <head>
+      <title>Gallery with Sidebar</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <style>
+
+      h5{
+        font-family: sans-serif;
+        color: hsl(21, 17%, 49%);
+      }
+
+      h6{
+        font-family: sans-serif;
+        color: hsl(21, 17%, 49%);
+        text-align: justify;
+        font-size: 14px;
+        background-color: #f9f9f9;
+        padding: 16px;
+        margin: 10px;
+        border-radius: 0;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); /* optional for depth */
+      }
+
+      #gallery img {
+      margin-bottom: 16px; 
+      }
+
+    </style>
+    </head>
+    <body>
+      
+      <script src = 'sketch.js'></script>
+      
+    <nav class="w3-sidebar w3-bar-block w3-#f5f0dc w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar">
+    <h5 class="w3-padding-64 w3-center">"THE HUMBER HILL HOUSE"</h5>
+    <h6><p>The design of the Humber Hill House was inspired by the site location, Humber Bay Arch Bridge,  and also considered my habits. The initial idea was to integrate the house into the hills of Humber Bay to unite with the ambience of the serene site.  This house aims to integrate with nature. The large windows allow a relationship with the outdoor elements and keeping a simple interior create a focus on the natural surrounding elements.</p>
+    The geometry of the building create an organized pattern through a rectangular structure, but the different elongations and heights can be perceived as disorganized  which is apart  of my habits and became a focused concept of my design. The pathway between three different rooms connected by stairs was inspired by a musical staff. Although the shape stay harmonious, there is dissonance  within the height and length of each rectangular structure. </h6>
+    </nav>
+
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+    <div class="w3-main" style="margin-left:300px">
+    <div class="w3-hide-large" style="margin-top:83px"></div>
+
+    <div class="w3-row-padding" id="gallery">
+    <div class="w3-third">
+      <img src="2.jpg" style="width:100%">
+      <img src="3.jpg" style="width:100%">
+      <img src="4.jpg" style="width:100%">
+      <img src="5.jpg" style="width:100%">
+      <img src="6.jpg" style="width:100%">
+    </div>
+
+    <div class="w3-third">
+      <img src="1.jpg" style="width:100%">
+      <img src="7.jpg" style="width:100%">
+      <img src="8.jpg" style="width:100%">
+      <img src="9.jpg" style="width:100%">
+      <img src="20.jpg" style="width:100%">
+    </div>
+
+    <div class="w3-third">
+      <img src="10.jpg" style="width:100%">
+      <img src="11.jpg" style="width:100%">
+      <img src="12.jpg" style="width:100%">
+      <img src="13.jpg" style="width:100%">
+      <img src="14.jpg" style="width:100%">
+      <img src="21.jpg" style="width:100%">
+    </div>
+
+
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright"></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
